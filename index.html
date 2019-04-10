@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="Description" CONTENT="This is my home page">
+        <meta name="author" CONTENT="Alex Bustamante">
+        <meta name="keyword" CONTENT="DCHS, Teacher, Computers, Falcons, Web Design, Portfolio">
+              
+        <title>The Bee Movie - "The Greatest Movie of All Time"</title>
+        <link rel="shortcut icon" href="favicon.png"/>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700" rel="stylesheet">
+        <link rel="stylesheet" media="screen and (min-device-width: 1200px)" href="main.css" />
+        <link rel="stylesheet" media="screen and (min-width: 600px) and (max-width: 1199px)" href="tablet.css" />
+        <link rel="stylesheet" media="screen and (max-width: 599px)" href="phone.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    </head>
+    
+    <body>
+        
+        <!-----------------------------------------Nav Bar------------------------------------------------->
+        <div id="navbar" class="animated slideInLeft">
+            <a href="#index" class="index hvr-bounce-in"><h4 class="nav">Home</h4></a>
+            <a href="#about" class="about hvr-bounce-in"><h4 class="nav">About</h4></a>
+            <a href="#characters" class="characters hvr-bounce-in"><h4 class="nav">Characters</h4></a>
+            <a href="#gallery" class="gallery hvr-bounce-in"><h4 class="nav">Gallery</h4></a>
+            <a href="#tickets" class="tickets hvr-bounce-in"><h4 class="nav">Tickets</h4></a>
+        </div>
+        <!----------------------------------------/Nav Bar------------------------------------------------->
+        
+        <video playsinline autoplay muted loop id="bgvid">
+            <source src="beemovietrailer.mp4" type="video/mp4">
+        </video>
+        
+        <div id="index"></div>
+        <div id="title">
+            <h1 class="maintitle animated bounceInRight">The Bee Movie</h1>
+        </div>
+        
+        <img src="scrolldown.gif" id="scrolldown">
+
+<!--------------------------------------------------Content-------------------------------------------------->        
+        <div id="content">
+            <div id="about"></div>
+            <div id="description">
+                <h1 class="desc">Barry B. Benson, a bee just graduated from college, is disillusioned at his lone career choice: making honey. On a special trip outside the hive, Barry's life is saved by Vanessa, a florist in New York City. As their relationship blossoms, he discovers humans actually eat honey, and subsequently decides to sue them.</h1>
+            </div>
+            
+<!------------------------Characters---------------------->              
+            <div id="characters"></div>
+            <div id="characterbox">
+                <h1 class="title">Characters</h1>
+                <a href="http://www.imdb.com/character/ch0033133/?ref_=tt_cl_t1" target="_blank"><img src="Barry_the_Bee.png" id="beepic" class="hvr-grow"></a>
+                <div id="beedesc"><h1 class="chardesc">Barry B. Benson</h1></div>
+                <a href="http://www.imdb.com/character/ch0036171/?ref_=tt_cl_t2" target="_blank"><img src="Vanessa.jpg" id="vanessa" class="hvr-grow"></a>
+                <div id="vanessadesc"><h1 class="chardesc">Vanessa</h1></div>
+                <a href="http://www.imdb.com/character/ch0033135/?ref_=tt_cl_t3" target="_blank"><img src="flayman.jpg" id="flayman" class="hvr-grow"></a>
+                <div id="flaymandesc"><h1 class="chardesc">Adam Flayman</h1></div>
+                <a href="http://www.imdb.com/character/ch0036348/?ref_=tt_cl_t4" target="_blank"><img src="ken.jpg" id="ken" class="hvr-grow"></a>
+                <div id="kendesc"><h1 class="chardesc">Ken</h1></div>
+            </div>
+<!-----------------------/Characters----------------------> 
+            
+<!------------------------Gallery------------------------->  
+            <div id="gallery"></div>
+            <div id="gallerybox">
+                <h1 class="title">Gallery</h1>
+            </div>
+<!-----------------------/Gallery-------------------------> 
+            
+<!-----------------------Tickets------------------------->             
+            <div id="tickets"></div>
+            <div id="ticketsbox">
+                <h1 class="title">Tickets</h1>
+                <form>
+                    <input type="text" id="fname" name="fname" value="First Name">
+                    <br>
+                    <input type="text" id="lname" name="lname" value="Last Name">
+                    <br>
+                    <select id="city" name="city">
+                        <option>City</option>
+                        <option>Dearborn</option>
+                        <option>Detroit</option>
+                        <option>Livonia</option>
+                        <option>Canton</option>
+                    </select>
+                    <br>
+                    <input type="text" id="ccnum" name="ccnum" value="Credit Card Number">
+                    <select id="showtime" name="showtime">
+                        <option>Choose a Showtime</option>
+                        <option>Dec 25 - 12:00a.m.</option>
+                        <option>Dec 26 - 11:30a.m.</option>
+                        <option>Dec 26 - 3:00p.m.</option>
+                        <option>Dec 27 - 2:00a.m.</option>
+                        <option>Dec 29 - 10:00a.m.</option>
+                    </select>
+                    <br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+<!----------------------/Tickets------------------------->
+            
+            <div id="footer">
+                &copy; Alex Bustamante
+            </div>
+        </div>
+<!-------------------------------------------------/Content-------------------------------------------------->   
+        
+    </body>
+</html>
